@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lynn Delpy - Programmer</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="description" content="Lynn Delpy's personal website showcasing projects and interests in programming and cybersecurity.">
+
+  <style>
+    /* Additional styles can be added here if necessary */
+  </style>
+</head>
+
+<body>
+<header>
+  <p>Lynn Delpy</p>
+  <nav class="nav">
+    <a href="">Home</a>
+    <a href="additions/projects.html">Projects</a>
+    <a href="additions/aboutMe.html">About Me</a>
+  </nav>
+</header>
+<div class="hero">
+  <div class="heroImage"></div>
+  <div class="heroText">
+    <h1>Hi, I'm Lynn <br> A <span class="highlight">Programmer</span></h1>
+    <h5>Back-end and cybersecurity are my passion</h5>
+  </div>
+</div>
+
+<script>
+  function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+
+  const hero = document.querySelector('.hero');
+  const linearColor = getRandomColor();
+  const radialColor = getRandomColor();
+
+  hero.style.backgroundImage = `linear-gradient(to bottom right, ${linearColor}, transparent), radial-gradient(circle, ${radialColor}, transparent)`;
+</script>
+</body>
+
+</html>

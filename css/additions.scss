@@ -1,0 +1,50 @@
+// Define variables for common values
+$header-width: 100%;
+$flex-display: flex;
+$nav-direction: column;
+$text-highlight-color: #FFD700;
+$primary-color: #333;
+$fancy-font: sans-serif;
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+
+  header {
+    width: $header-width;
+    display: $flex-display;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+    p {
+      color: #fff;
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav {
+      color: #fff;
+      display: $flex-display;
+      justify-content: space-between;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 2vw;
+
+        &:hover {
+          color: #007BFF;
+        }
+      }
+    }
+  }
+}

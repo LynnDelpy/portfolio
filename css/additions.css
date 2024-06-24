@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+body header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+body header p {
+  color: #fff;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+body header .nav {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+body header .nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 2vw;
+}
+body header .nav a:hover {
+  color: #007BFF;
+}
+
+/*# sourceMappingURL=additions.css.map */

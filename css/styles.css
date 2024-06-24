@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+header p {
+  color: #fff;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+header .nav {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+header .nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 2vw;
+}
+header .nav a:hover {
+  color: #007BFF;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, #333, transparent), radial-gradient(circle, #0000FF, transparent);
+  background-size: 200% 200%;
+  animation: animateBackground 10s infinite alternate;
+  color: #fff;
+}
+.hero .heroText {
+  font-family: sans-serif;
+}
+.hero .heroText h1 {
+  font-size: 7rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+}
+.hero .heroText h5 {
+  font-size: 2rem;
+  margin-top: 0;
+  font-family: sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes animateBackground {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
