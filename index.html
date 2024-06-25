@@ -6,11 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lynn Delpy - Programmer</title>
   <link rel="stylesheet" href="css/styles.css">
-  <meta name="description" content="Lynn Delpy's personal website showcasing projects and interests in programming and cybersecurity.">
+  <meta name="description"
+        content="Lynn Delpy's personal website showcasing projects and interests in programming and cybersecurity.">
 
-  <style>
-    /* Additional styles can be added here if necessary */
-  </style>
+
 </head>
 
 <body>
@@ -27,18 +26,21 @@
   <div class="heroText">
     <h1>Hi, I'm Lynn <br> A <span class="highlight">Programmer</span></h1>
     <h5>Back-end and cybersecurity are my passion</h5>
+    <button onClick="window.location.reload();">Change background</button>
   </div>
 </div>
 
+
 <script>
   function getRandomColor() {
-    const letters = '0123456789ABCDEF';
+    const letters = '6789ABCD';
     let color = '#';
     for (let i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
+      color += letters[Math.floor(Math.random() * letters.length)];
     }
     return color;
   }
+
 
   const hero = document.querySelector('.hero');
   const linearColor = getRandomColor();
