@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  padding-top: 4vh;
+}
+
+header {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+header p {
+  color: #333;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+header nav {
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+}
+header nav a {
+  color: #333;
+  text-decoration: none;
+  margin-right: 2vw;
+}
+header nav a:hover {
+  color: #007BFF;
+}
+
+main {
+  padding: 2rem;
+}
+main .intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+main .intro img.portrait {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 1rem;
+  border: 5px solid #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
+}
+main .details {
+  text-align: center;
+}
+main .details h2 {
+  margin-top: 1.5rem;
+  color: #333;
+}
+main .details .skills {
+  list-style: none;
+  padding: 0;
+}
+main .details .skills li {
+  margin-bottom: 1rem;
+}
+main .details .skills li .skill-chart {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+main .details .skills li .skill-chart span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+main .details .skills li .skill-chart .filled {
+  background-color: #333;
+}
+main .cv {
+  text-align: center;
+}
+main .cv img {
+  width: 4vw;
+}
+
+/*# sourceMappingURL=aboutMe.css.map */
