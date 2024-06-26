@@ -54,6 +54,29 @@ main .intro img.portrait {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   object-fit: cover;
 }
+main .intro .socials {
+  margin-left: 1.4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .intro .socials a {
+  display: block;
+  margin: 0 5px;
+}
+main .intro .socials #github {
+  margin-left: 1vw;
+}
+main .intro .socials #mail {
+  width: 5vw;
+}
+main .intro .socials img {
+  width: 3vw;
+  transition: transform 0.3s ease;
+}
+main .intro .socials img:hover {
+  transform: scale(1.1);
+}
 main .details {
   max-width: 50vw;
   margin: 0 auto;

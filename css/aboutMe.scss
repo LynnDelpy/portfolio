@@ -71,6 +71,37 @@ main {
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
       object-fit: cover;
     }
+
+    .socials {
+      margin-left: 1.4vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        display: block;
+        margin: 0 5px;
+      }
+      #github{
+        margin-left: 1vw;
+      }
+      #mail{
+        width: 5vw;
+      }
+
+      img {
+        width: 3vw;
+        transition: transform 0.3s ease;
+
+
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+
   }
 
   .details {
